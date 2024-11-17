@@ -77,6 +77,6 @@ function registerUser() {
 
 function saveNote() {
     const note = document.getElementById("note").value;
-    // Implement the code to save the note to your GitHub repo
+    
     alert("Note saved!");
 }

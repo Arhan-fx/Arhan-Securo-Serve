@@ -2,10 +2,13 @@ const USER_ID = "admin";
 const PASSWORD = "sierra_7";
 let attempts = 0;
 const MAX_ATTEMPTS = 3;
+
 let users = {};
+
 window.onload = function() {
     generateCaptcha();
 };
+
 function generateCaptcha() {
     const captcha = Math.floor(Math.random() * 9000) + 1000;
     document.getElementById("captcha").innerText = captcha;
@@ -58,9 +61,11 @@ function hideRegisterForm() {
     document.getElementById("register-form").classList.add("hidden");
     document.getElementById("login-form").classList.remove("hidden");
 }
+
 function registerUser() {
     const newUserId = document.getElementById("new-user-id").value;
     const newPassword = document.getElementById("new-password").value;
+
     if (users[newUserId]) {
         alert("User ID already exists. Please choose a different User ID.");
     } else {
@@ -69,6 +74,7 @@ function registerUser() {
         hideRegisterForm();
     }
 }
+
 function saveNote() {
     const note = document.getElementById("note").value;
     alert("Note saved!");

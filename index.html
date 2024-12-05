@@ -8,23 +8,23 @@
 </head>
 <body>
     <div class="container">
-        <img src="logo.png" alt="Logo" class="logo">
+        <img src="logo.png" alt="ARHAN Securo Serve Logo" class="logo">
         <h1>ARHAN Securo Serve</h1>
         <div id="login-form">
             <label for="user-id">User ID:</label>
-            <input type="text" id="user-id">
+            <input type="text" id="user-id" aria-label="Enter your user ID">
             <label for="password">Password:</label>
-            <input type="password" id="password">
-            <label for="captcha">Captcha: <span id="captcha"></span></label>
-            <input type="text" id="captcha-input">
+            <input type="password" id="password" aria-label="Enter your password">
+            <label for="captcha">Captcha: <span id="captcha">123ABC</span></label>
+            <input type="text" id="captcha-input" aria-label="Enter the captcha">
             <button onclick="validateLogin()">Login</button>
             <p>Don't have an account? <a href="#" onclick="showRegisterForm()">Register here</a></p>
         </div>
         <div id="register-form" class="hidden">
             <label for="new-user-id">New User ID:</label>
-            <input type="text" id="new-user-id">
+            <input type="text" id="new-user-id" aria-label="Enter a new user ID">
             <label for="new-password">New Password:</label>
-            <input type="password" id="new-password">
+            <input type="password" id="new-password" aria-label="Enter a new password">
             <button onclick="registerUser()">Register</button>
             <button onclick="hideRegisterForm()">Cancel</button>
         </div>

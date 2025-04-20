@@ -13,7 +13,6 @@ body {
     align-items: center;
 }
 
- 
 .container {
     background-color: #fff;
     padding: 25px 20px;
@@ -31,7 +30,6 @@ body {
     height: auto;
 }
 
- 
 h1 {
     font-size: 1.8rem;
     font-weight: bold;
@@ -39,7 +37,6 @@ h1 {
     margin-bottom: 20px;
 }
 
- 
 label {
     display: block;
     margin-top: 12px;
@@ -65,7 +62,6 @@ input:focus, textarea:focus {
     outline: none;
 }
 
- 
 button {
     width: 100%;
     padding: 12px;
@@ -84,7 +80,6 @@ button:hover {
     background-color: #0056b3;
 }
 
- 
 p {
     margin-top: 10px;
     font-size: 14px;
@@ -99,25 +94,27 @@ a:hover {
     text-decoration: underline;
 }
 
- 
 .hidden {
     display: none;
 }
 
- 
 #video-container {
     margin-top: 20px;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 video {
+    display: block;
     width: 100%;
+    max-width: 100%;
     max-height: 300px;
     height: auto;
     border-radius: 10px;
     object-fit: contain;
+    background-color: #000;
 }
 
- 
 #editor {
     margin-top: 20px;
 }
@@ -127,7 +124,6 @@ video {
     resize: vertical;
 }
 
- 
 @media (max-width: 600px) {
     .container {
         padding: 15px;

@@ -7,6 +7,18 @@ let users = {};
 
 window.onload = function() {
     generateCaptcha();
+
+    const userIdInput = document.getElementById('user-id');
+    const passwordInput = document.getElementById('password');
+    const captchaInput = document.getElementById('captcha-input');
+
+    [userIdInput, passwordInput, captchaInput].forEach(input => {
+        input.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter') {
+                validateLogin();
+            }
+        });
+    });
 };
 
 function generateCaptcha() {
@@ -77,6 +89,5 @@ function registerUser() {
 
 function saveNote() {
     const note = document.getElementById("note").value;
-    
     alert("Note saved!");
 }
